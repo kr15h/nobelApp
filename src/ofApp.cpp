@@ -47,7 +47,7 @@ void ofApp::setup(){
 	
 	// Load font
 	shared_ptr<ofxTrueTypeFontUC> bigFont = make_shared<ofxTrueTypeFontUC>();
-	loaded = bigFont->load(string(BIG_FONT_PATH), BIG_FONT_SIZE);
+	loaded = bigFont->load(string(BIG_FONT_PATH), BIG_FONT_SIZE, true, true);
 	if(!loaded){
 		cout << "Could not load font" << endl;
 		ofExit();

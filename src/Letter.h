@@ -11,4 +11,10 @@ class Letter{
 	
 	private:
 		shared_ptr<ofxTrueTypeFontUC> _bigFont;
+	
+		string _testString;
+	
+		vector<ofPath> _stringPaths;
+		ofRectangle _stringBoundingBox;
+
 };
