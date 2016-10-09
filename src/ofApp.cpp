@@ -44,12 +44,23 @@ void ofApp::setup(){
 			<< laureates[i]->age
 			<< endl;
 	}
+	
+	// Load font
+	shared_ptr<ofxTrueTypeFontUC> bigFont = make_shared<ofxTrueTypeFontUC>();
+	loaded = bigFont->load(string(BIG_FONT_PATH), BIG_FONT_SIZE);
+	if(!loaded){
+		cout << "Could not load font" << endl;
+		ofExit();
+	}
+	
+	// Setup letters / words
+	letter.setup(bigFont);
 }
 
 void ofApp::update(){
-
+	letter.update();
 }
 
 void ofApp::draw(){
-
+	letter.draw();
 }

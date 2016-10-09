@@ -2,6 +2,11 @@
 
 #include "ofMain.h"
 #include "ofxXmlSettings.h"
+#include "ofxTrueTypeFontUC.h"
+#include "Letter.h"
+
+#define BIG_FONT_PATH "Libre_Baskerville/LibreBaskerville-Regular.ttf"
+#define BIG_FONT_SIZE 50
 
 class ofApp : public ofBaseApp{
 	public:
@@ -20,4 +25,8 @@ class ofApp : public ofBaseApp{
 		};
 	
 		vector <Laureate *> laureates;
+	
+		shared_ptr<ofxTrueTypeFontUC> bigFont;
+	
+		Letter letter;
 };
