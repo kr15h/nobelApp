@@ -4,17 +4,20 @@
  		<last>Rijnieks</last>
  		<field>Peace</field>
  		<year>2012</year>
+ 		<age>24</age>
  	</laureate>
  	<laureate>
  		<first>Philip</first>
  		<last>Silva</last>
  		<field>Physics</field>
  		<year>2014</year>
+ 		<age>16</age>
  	</laureate>
  	<laureate>
  		<first>Hugo</first>
  		<last>Silva</last>
  		<field>Chemistry</field>
  		<year>2025</year>
+ 		<age>18</age>
  	</laureate>
 </laureates>

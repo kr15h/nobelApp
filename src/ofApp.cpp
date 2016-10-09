@@ -23,6 +23,7 @@ void ofApp::setup(){
 			l->last = xmlSettings.getValue("last", "Mason");
 			l->field = xmlSettings.getValue("field", "Cooking");
 			l->year = xmlSettings.getValue("year", 1956);
+			l->age = xmlSettings.getValue("age", 18);
 			laureates.push_back(l);
 			
 			xmlSettings.popTag(); // laureate
@@ -39,7 +40,8 @@ void ofApp::setup(){
 		cout << laureates[i]->first << ", "
 			<< laureates[i]->last << ", "
 			<< laureates[i]->field << ", "
-			<< laureates[i]->year
+			<< laureates[i]->year << ", "
+			<< laureates[i]->age
 			<< endl;
 	}
 }

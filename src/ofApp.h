@@ -16,6 +16,7 @@ class ofApp : public ofBaseApp{
 			string last;
 			string field;
 			int year;
+			int age;
 		};
 	
 		vector <Laureate *> laureates;
