@@ -31,5 +31,13 @@ vector<ofPath> Fonts::getSmallAsPaths(string text){
 	return _fontSmall.getStringAsPoints(text);
 }
 
+ofRectangle Fonts::getBigAsBoundingBox(string text){
+	return _fontBig.getStringBoundingBox(text, 0, 0);
+}
+
+ofRectangle Fonts::getSmallAsBoundingBox(string text){
+	return _fontSmall.getStringBoundingBox(text, 0, 0);
+}
+
 } // namespace nobel
 } // namespace bmbf

@@ -15,6 +15,8 @@
 		01A5FC351DAAAB2B0001DA82 /* ofxTrueTypeFontUC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01A5FC301DAAAB2B0001DA82 /* ofxTrueTypeFontUC.cpp */; };
 		01A5FC381DAB81D30001DA82 /* Settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01A5FC371DAB81D30001DA82 /* Settings.cpp */; };
 		01A5FC3C1DAB84C10001DA82 /* Laureate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01A5FC3B1DAB84C10001DA82 /* Laureate.cpp */; };
+		01A5FC421DAB8AC40001DA82 /* Fonts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01A5FC411DAB8AC40001DA82 /* Fonts.cpp */; };
+		01A5FC451DAB9F8B0001DA82 /* LaureateDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01A5FC441DAB9F8B0001DA82 /* LaureateDisplay.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
 		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
@@ -65,6 +67,10 @@
 		01A5FC391DAB84230001DA82 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		01A5FC3A1DAB84C10001DA82 /* Laureate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Laureate.h; sourceTree = "<group>"; };
 		01A5FC3B1DAB84C10001DA82 /* Laureate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Laureate.cpp; sourceTree = "<group>"; };
+		01A5FC401DAB8AC40001DA82 /* Fonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fonts.h; sourceTree = "<group>"; };
+		01A5FC411DAB8AC40001DA82 /* Fonts.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Fonts.cpp; sourceTree = "<group>"; };
+		01A5FC431DAB9F8B0001DA82 /* LaureateDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaureateDisplay.h; sourceTree = "<group>"; };
+		01A5FC441DAB9F8B0001DA82 /* LaureateDisplay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LaureateDisplay.cpp; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E4B69B5B0A3A1756003C02F2 /* nobelAppDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nobelAppDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
@@ -176,13 +182,17 @@
 			isa = PBXGroup;
 			children = (
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
-				01A5FC391DAB84230001DA82 /* Constants.h */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
+				01A5FC391DAB84230001DA82 /* Constants.h */,
+				01A5FC431DAB9F8B0001DA82 /* LaureateDisplay.h */,
+				01A5FC441DAB9F8B0001DA82 /* LaureateDisplay.cpp */,
 				01A5FC3A1DAB84C10001DA82 /* Laureate.h */,
 				01A5FC3B1DAB84C10001DA82 /* Laureate.cpp */,
 				01A5FC361DAB81D30001DA82 /* Settings.h */,
 				01A5FC371DAB81D30001DA82 /* Settings.cpp */,
+				01A5FC401DAB8AC40001DA82 /* Fonts.h */,
+				01A5FC411DAB8AC40001DA82 /* Fonts.cpp */,
 				01A5FC221DAAA9420001DA82 /* Letter.h */,
 				01A5FC231DAAA9420001DA82 /* Letter.cpp */,
 			);
@@ -292,6 +302,8 @@
 				01A5FC3C1DAB84C10001DA82 /* Laureate.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				01A5FC241DAAA9420001DA82 /* Letter.cpp in Sources */,
+				01A5FC421DAB8AC40001DA82 /* Fonts.cpp in Sources */,
+				01A5FC451DAB9F8B0001DA82 /* LaureateDisplay.cpp in Sources */,
 				01A5FC1E1DAA5C4F0001DA82 /* tinyxml.cpp in Sources */,
 				01A5FC201DAA5C4F0001DA82 /* tinyxmlparser.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,

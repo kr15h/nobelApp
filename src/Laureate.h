@@ -16,8 +16,11 @@ class Laureate{
 			int age,
 			shared_ptr<Fonts> fonts);
 	
-		// Draw laureate data
+		void update();
 		void draw();
+	
+		void drawFirst();
+		void drawLast();
 	
 		string getFirst();
 		string getLast();
@@ -38,6 +41,9 @@ class Laureate{
 	
 		vector<ofPath> _firstPaths;
 		vector<ofPath> _yearPaths;
+	
+		ofRectangle _firstBoundingBox;
+		ofRectangle _yearBoundingBox;
 };
 
 } // namespace nobel

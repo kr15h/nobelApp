@@ -21,18 +21,26 @@ Laureate::Laureate(
 	// Setup paths
 	_firstPaths = _fonts->getBigAsPaths(_first);
 	_yearPaths = _fonts->getSmallAsPaths(ofToString(_year));
+	
+	// Setup bounding boxes
+	_firstBoundingBox = _fonts->getBigAsBoundingBox(_first);
+	_yearBoundingBox = _fonts->getSmallAsBoundingBox(ofToString(_year));
+}
+
+void Laureate::update(){
+	//
 }
 
 void Laureate::draw(){
 	ofPushMatrix();
-	ofTranslate(20, 100);
+	ofTranslate(0, _firstBoundingBox.height);
 	for(unsigned int i = 0; i < _firstPaths.size(); ++i){
 		_firstPaths[i].draw();
 	}
 	ofPopMatrix();
 	
 	ofPushMatrix();
-	ofTranslate(20, 200);
+	ofTranslate(0, _firstBoundingBox.height + _yearBoundingBox.height);
 	for(unsigned int i = 0; i < _yearPaths.size(); ++i){
 		_yearPaths[i].draw();
 	}
