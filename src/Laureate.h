@@ -1,5 +1,6 @@
 #pragma once
 
+#include "Constants.h"
 #include "ofMain.h"
 #include "Fonts.h"
 
@@ -13,21 +14,20 @@ class Laureate{
 			string last,
 			string field,
 			int year,
-			int age,
 			shared_ptr<Fonts> fonts);
 	
 		void update();
-		void draw();
 	
+		void draw();
 		void drawFirst();
 		void drawLast();
+		void drawFieldAndYear();
 	
 		string getFirst();
 		string getLast();
 		string getField();
 	
 		int getYear();
-		int getAge();
 	
 	private:
 		shared_ptr<Fonts> _fonts;
@@ -37,13 +37,14 @@ class Laureate{
 		string _field;
 	
 		int _year;
-		int _age;
 	
 		vector<ofPath> _firstPaths;
-		vector<ofPath> _yearPaths;
+		vector<ofPath> _lastPaths;
+		vector<ofPath> _fieldAndYearPaths;
 	
 		ofRectangle _firstBoundingBox;
-		ofRectangle _yearBoundingBox;
+		ofRectangle _lastBoundingBox;
+		ofRectangle _fieldAndYearBoundingBox;
 };
 
 } // namespace nobel

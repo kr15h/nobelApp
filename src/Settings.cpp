@@ -24,9 +24,8 @@ vector<Laureate *> & Settings::load(string filename, shared_ptr<Fonts> fonts){
 			string last = _xml.getValue("last", "Mason");
 			string field = _xml.getValue("field", "Cooking");
 			int year = _xml.getValue("year", 1956);
-			int age = _xml.getValue("age", 18);
 			
-			Laureate * l = new Laureate(first, last, field, year, age, fonts);
+			Laureate * l = new Laureate(first, last, field, year, fonts);
 			_laureates.push_back(l);
 			
 			_xml.popTag(); // laureate
@@ -43,8 +42,7 @@ vector<Laureate *> & Settings::load(string filename, shared_ptr<Fonts> fonts){
 		cout << _laureates[i]->getFirst() << ", "
 			<< _laureates[i]->getLast() << ", "
 			<< _laureates[i]->getField() << ", "
-			<< _laureates[i]->getYear() << ", "
-			<< _laureates[i]->getAge()
+			<< _laureates[i]->getYear()
 			<< endl;
 	}
 	

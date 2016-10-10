@@ -1,7 +1,8 @@
 #include "ofMain.h"
 #include "ofApp.h"
+#include "Constants.h"
 
 int main(){
-	ofSetupOpenGL(1600, 300, OF_WINDOW);
+	ofSetupOpenGL(APP_WIDTH, APP_HEIGHT, OF_WINDOW);
 	ofRunApp(new ofApp());
 }

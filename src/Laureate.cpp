@@ -8,23 +8,26 @@ Laureate::Laureate(
 	string last,
 	string field,
 	int year,
-	int age,
 	shared_ptr<Fonts> fonts){
 
 	_first = first;
 	_last = last;
 	_field = field;
 	_year = year;
-	_age = age;
 	_fonts = fonts;
 	
 	// Setup paths
 	_firstPaths = _fonts->getBigAsPaths(_first);
-	_yearPaths = _fonts->getSmallAsPaths(ofToString(_year));
+	_lastPaths = _fonts->getBigAsPaths(_last);
 	
 	// Setup bounding boxes
 	_firstBoundingBox = _fonts->getBigAsBoundingBox(_first);
-	_yearBoundingBox = _fonts->getSmallAsBoundingBox(ofToString(_year));
+	_lastBoundingBox = _fonts->getBigAsBoundingBox(_last);
+	
+	// Field and year is a special case
+	string fieldAndYear = _field + ", " + ofToString(_year);
+	_fieldAndYearPaths = _fonts->getSmallAsPaths(fieldAndYear);
+	_fieldAndYearBoundingBox = _fonts->getSmallAsBoundingBox(fieldAndYear);
 }
 
 void Laureate::update(){
@@ -32,17 +35,43 @@ void Laureate::update(){
 }
 
 void Laureate::draw(){
+	drawFirst();
+	drawLast();
+	drawFieldAndYear();
+}
+
+void Laureate::drawFirst(){
 	ofPushMatrix();
-	ofTranslate(0, _firstBoundingBox.height);
+	ofTranslate(
+		APP_MARGIN,
+		APP_MARGIN + BIG_FONT_SIZE);
+	
 	for(unsigned int i = 0; i < _firstPaths.size(); ++i){
 		_firstPaths[i].draw();
 	}
 	ofPopMatrix();
-	
+}
+
+void Laureate::drawLast(){
 	ofPushMatrix();
-	ofTranslate(0, _firstBoundingBox.height + _yearBoundingBox.height);
-	for(unsigned int i = 0; i < _yearPaths.size(); ++i){
-		_yearPaths[i].draw();
+	ofTranslate(
+		APP_WIDTH - _lastBoundingBox.width - APP_MARGIN,
+		APP_MARGIN + BIG_FONT_SIZE);
+	
+	for(unsigned int i = 0; i < _lastPaths.size(); ++i){
+		_lastPaths[i].draw();
+	}
+	ofPopMatrix();
+}
+
+void Laureate::drawFieldAndYear(){
+	ofPushMatrix();
+	ofTranslate(
+		APP_WIDTH - _fieldAndYearBoundingBox.width - APP_MARGIN,
+		APP_HEIGHT - APP_MARGIN);
+	
+	for(unsigned int i = 0; i < _fieldAndYearPaths.size(); ++i){
+		_fieldAndYearPaths[i].draw();
 	}
 	ofPopMatrix();
 }
@@ -61,10 +90,6 @@ std::string Laureate::getField(){
 
 int Laureate::getYear(){
 	return _year;
-}
-
-int Laureate::getAge(){
-	return _age;
 }
 
 } // namespace nobel
