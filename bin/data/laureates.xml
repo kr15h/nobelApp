@@ -1,23 +1,170 @@
 <laureates>
- 	<laureate>
- 		<first>Krisjanis</first>
- 		<last>Rijnieks</last>
- 		<field>Peace</field>
- 		<year>2012</year>
- 		<age>24</age>
- 	</laureate>
- 	<laureate>
- 		<first>Philip</first>
- 		<last>Silva</last>
- 		<field>Physics</field>
- 		<year>2014</year>
- 		<age>16</age>
- 	</laureate>
- 	<laureate>
- 		<first>Hugo</first>
- 		<last>Silva</last>
- 		<field>Chemistry</field>
- 		<year>2025</year>
- 		<age>18</age>
- 	</laureate>
+	<laureate>
+		<first>Stefan</first>
+		<last>Hell</last>
+		<field>Chemistry</field>
+		<year>2014</year>
+	</laureate>
+	<laureate>
+		<first>Thomas C.</first>
+		<last>Südhof</last>
+		<field>Physiology or Medicine</field>
+		<year>2013</year>
+	</laureate>
+	<laureate>
+		<first>Herta</first>
+		<last>Müller</last>
+		<field>Literature</field>
+		<year>2009</year>
+	</laureate>
+	<laureate>
+		<first>Harald</first>
+		<last>zur Hausen</last>
+		<field>Physiology or Medicine</field>
+		<year>2008</year>
+	</laureate>
+	<laureate>
+		<first>Gerhard</first>
+		<last>Ertl</last>
+		<field>Chemistry</field>
+		<year>2007</year>
+	</laureate>
+	<laureate>
+		<first>Peter</first>
+		<last>Grünberg</last>
+		<field>Physics</field>
+		<year>2007</year>
+	</laureate>
+	<laureate>
+		<first>Theodor W.</first>
+		<last>Hänsch</last>
+		<field>Physics</field>
+		<year>2005</year>
+	</laureate>
+	<laureate>
+		<first>Wolfgang</first>
+		<last>Ketterle</last>
+		<field>Physics</field>
+		<year>2001</year>
+	</laureate>
+	<laureate>
+		<first>Herbert</first>
+		<last>Kroemer</last>
+		<field>Physics</field>
+		<year>2000</year>
+	</laureate>
+	<laureate>
+		<first>Günter</first>
+		<last>Blobel</last>
+		<field>Physiology or Medicine</field>
+		<year>1999</year>
+	</laureate>
+	<laureate>
+		<first>Günter</first>
+		<last>Grass</last>
+		<field>Literature</field>
+		<year>1999</year>
+	</laureate>
+	<laureate>
+		<first>Horst L.</first>
+		<last>Störmer</last>
+		<field>Physics</field>
+		<year>1998</year>
+	</laureate>
+	<laureate>
+		<first>Paul J.</first> 
+		<last>Crutzen</last>
+		<field>Chemistry</field>
+		<year>1995</year>
+	</laureate>
+	<laureate>
+		<first>Christiane</first>
+		<last>Nüsslein-Volhard</last>
+		<field>Physiology or Medicine</field>
+		<year>1995</year>
+	</laureate>
+	<laureate>
+		<first>Reinhard</first>
+		<last>Selten</last>
+		<field>Economics</field>
+		<year>1994</year>
+	</laureate>
+	<laureate>
+		<first>Bert</first>
+		<last>Sakmann</last>
+		<field>Physiology or Medicine</field>
+		<year>1991</year>
+	</laureate>
+	<laureate>
+		<first>Erwin</first>
+		<last>Neher</last>
+		<field>Physiology or Medicine</field>
+		<year>1991</year>
+	</laureate>
+	<laureate>
+		<first>Hans G.</first>
+		<last>Dehmelt</last>
+		<field>Physics</field>
+		<year>1989</year>
+	</laureate>
+	<laureate>
+		<first>Wolfgang</first>
+		<last>Paul</last>
+		<field>Physics</field>
+		<year>1989</year>
+	</laureate>
+	<laureate>
+		<first>Johann</first>
+		<last>Deisenhofer</last>
+		<field>Chemistry</field>
+		<year>1988</year>
+	</laureate>
+	<laureate>
+		<first>Robert</first>
+		<last>Huber</last>
+		<field>Chemistry</field>
+		<year>1988</year>
+	</laureate>
+	<laureate>
+		<first>Hartmut</first>
+		<last>Michel</last>
+		<field>Chemistry</field>
+		<year>1988</year>
+	</laureate>
+	<laureate>
+		<first>Jack</first>
+		<last>Steinberger</last>
+		<field>Physics</field>
+		<year>1988</year>
+	</laureate>
+	<laureate>
+		<first>J. Georg</first>
+		<last>Bednorz</last>
+		<field>Physics</field>
+		<year>1987</year>
+	</laureate>
+	<laureate>
+		<first>Ernst</first>
+		<last>Ruska</last>
+		<field>Physics</field>
+		<year>1986</year>
+	</laureate>
+	<laureate>
+		<fist>Gerd</fist>
+		<last>Binnig</last>
+		<field>Physics</field>
+		<year>1986</year>
+	</laureate>
+	<laureate>
+		<first>Klaus</first> 
+		<last>von Klitzing</last>
+		<field>Physics</field>
+		<year>1985</year>
+	</laureate>
+	<laureate>
+		<first>Georges J.F.</first>
+		<last>Köhler</last>
+		<field>Physiology or Medicine</field>
+		<year>1984</year>
+	</laureate>
 </laureates>
