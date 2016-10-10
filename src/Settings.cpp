@@ -3,9 +3,10 @@
 namespace bmbf{
 namespace nobel{
 
-void Settings::load(string filename){
-	bool loaded = _xml.load(filename);
+vector<Laureate *> & Settings::load(string filename, shared_ptr<Fonts> fonts){
+	_fonts = fonts;
 	
+	bool loaded = _xml.load(filename);
 	if(!loaded){
 		cout << "Could not load " << filename << endl;
 		ofExit();
@@ -25,7 +26,7 @@ void Settings::load(string filename){
 			int year = _xml.getValue("year", 1956);
 			int age = _xml.getValue("age", 18);
 			
-			Laureate * l = new Laureate(first, last, field, year, age);
+			Laureate * l = new Laureate(first, last, field, year, age, fonts);
 			_laureates.push_back(l);
 			
 			_xml.popTag(); // laureate
@@ -46,6 +47,8 @@ void Settings::load(string filename){
 			<< _laureates[i]->getAge()
 			<< endl;
 	}
+	
+	return _laureates;
 }
 
 } // nobel

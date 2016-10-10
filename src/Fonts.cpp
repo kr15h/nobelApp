@@ -23,12 +23,12 @@ void Fonts::load(
 	}
 }
 
-ofxTrueTypeFontUC & Fonts::getBig(){
-	return _fontBig;
+vector<ofPath> Fonts::getBigAsPaths(string text){
+	return _fontBig.getStringAsPoints(text);
 }
 
-ofxTrueTypeFontUC & Fonts::getSmall(){
-	return _fontSmall;
+vector<ofPath> Fonts::getSmallAsPaths(string text){
+	return _fontSmall.getStringAsPoints(text);
 }
 
 } // namespace nobel

@@ -8,7 +8,7 @@
 #include "Constants.h"
 #include "Settings.h"
 #include "Fonts.h"
-#include "Letter.h"
+#include "Laureate.h"
 
 class ofApp : public ofBaseApp{
 	public:
@@ -19,5 +19,5 @@ class ofApp : public ofBaseApp{
 		shared_ptr<bmbf::nobel::Settings> settings;
 		shared_ptr<bmbf::nobel::Fonts> fonts;
 	
-		bmbf::nobel::Letter letter;
+		vector<bmbf::nobel::Laureate *> laureates;
 };

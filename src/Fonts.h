@@ -15,8 +15,8 @@ class Fonts{
 			string smallFontPath,
 			int smallFontSize);
 	
-		ofxTrueTypeFontUC & getBig();
-		ofxTrueTypeFontUC & getSmall();
+		vector<ofPath> getBigAsPaths(string text = "A");
+		vector<ofPath> getSmallAsPaths(string text = "B");
 	
 	private:
 		ofxTrueTypeFontUC _fontBig;

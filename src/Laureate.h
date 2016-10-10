@@ -1,6 +1,7 @@
 #pragma once
 
-#include <string>
+#include "ofMain.h"
+#include "Fonts.h"
 
 namespace bmbf{
 namespace nobel{
@@ -8,26 +9,35 @@ namespace nobel{
 class Laureate{
 	public:
 		Laureate(
-			std::string first,
-			std::string last,
-			std::string field,
+			string first,
+			string last,
+			string field,
 			int year,
-			int age);
+			int age,
+			shared_ptr<Fonts> fonts);
 	
-		std::string getFirst();
-		std::string getLast();
-		std::string getField();
+		// Draw laureate data
+		void draw();
+	
+		string getFirst();
+		string getLast();
+		string getField();
 	
 		int getYear();
 		int getAge();
 	
 	private:
-		std::string _first;
-		std::string _last;
-		std::string _field;
+		shared_ptr<Fonts> _fonts;
+
+		string _first;
+		string _last;
+		string _field;
 	
 		int _year;
 		int _age;
+	
+		vector<ofPath> _firstPaths;
+		vector<ofPath> _yearPaths;
 };
 
 } // namespace nobel
