@@ -28,5 +28,5 @@ class ofApp : public ofBaseApp{
 	
 		shared_ptr<ofxTrueTypeFontUC> bigFont;
 	
-		Letter letter;
+		bmbf::nobel::Letter letter;
 };

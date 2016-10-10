@@ -1,5 +1,8 @@
 #include "Letter.h"
 
+namespace bmbf{
+namespace nobel{
+
 void Letter::setup(shared_ptr<ofxTrueTypeFontUC> & bf){
 	_bigFont = bf;
 	
@@ -20,3 +23,6 @@ void Letter::draw(){
 		_stringPaths[i].draw(20, 200);
 	}
 }
+
+} // namespace nobel
+} // namespace bmbf
