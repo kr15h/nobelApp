@@ -7,6 +7,7 @@
 
 #include "Constants.h"
 #include "Settings.h"
+#include "Fonts.h"
 #include "Letter.h"
 
 class ofApp : public ofBaseApp{
@@ -15,10 +16,8 @@ class ofApp : public ofBaseApp{
 		void update();
 		void draw();
 	
-		ofxXmlSettings xmlSettings;
+		shared_ptr<bmbf::nobel::Settings> settings;
+		shared_ptr<bmbf::nobel::Fonts> fonts;
 	
-		shared_ptr<ofxTrueTypeFontUC> bigFont;
-	
-		bmbf::nobel::Settings settings;
 		bmbf::nobel::Letter letter;
 };

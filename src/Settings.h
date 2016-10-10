@@ -12,7 +12,7 @@ namespace nobel{
 
 class Settings{
 	public:
-		void load();
+		void load(string filename);
 	
 	private:
 		ofxXmlSettings _xml;

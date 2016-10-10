@@ -3,11 +3,11 @@
 namespace bmbf{
 namespace nobel{
 
-void Settings::load(){
-	bool loaded = _xml.load("laureates.xml");
+void Settings::load(string filename){
+	bool loaded = _xml.load(filename);
 	
 	if(!loaded){
-		cout << "Could not load laureates.xml" << endl;
+		cout << "Could not load " << filename << endl;
 		ofExit();
 	}
 	

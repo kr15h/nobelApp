@@ -4,18 +4,18 @@ void ofApp::setup(){
 	ofBackground(0);
 	ofSetVerticalSync(true);
 	
-	settings.load();
+	settings = make_shared<bmbf::nobel::Settings>();
+	settings->load(string(XML_SETTINGS_FILENAME));
 	
-	// Load font
-	shared_ptr<ofxTrueTypeFontUC> bigFont = make_shared<ofxTrueTypeFontUC>();
-	bool loaded = bigFont->load(string(BIG_FONT_PATH), BIG_FONT_SIZE, true, true);
-	if(!loaded){
-		cout << "Could not load font" << endl;
-		ofExit();
-	}
+	fonts = make_shared<bmbf::nobel::Fonts>();
+	fonts->load(
+		string(REGULAR_FONT_PATH),
+		int(BIG_FONT_SIZE),
+		string(REGULAR_FONT_PATH),
+		int(SMALL_FONT_SIZE));
 	
 	// Setup letters / words
-	letter.setup(bigFont);
+	letter.setup(fonts);
 }
 
 void ofApp::update(){

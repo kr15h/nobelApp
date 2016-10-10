@@ -2,18 +2,19 @@
 
 #include "ofMain.h"
 #include "ofxTrueTypeFontUC.h"
+#include "Fonts.h"
 
 namespace bmbf{
 namespace nobel{
 
 class Letter{
 	public:
-		void setup(shared_ptr<ofxTrueTypeFontUC> & bf);
+		void setup(shared_ptr<Fonts> fonts);
 		void update();
 		void draw();
 	
 	private:
-		shared_ptr<ofxTrueTypeFontUC> _bigFont;
+		shared_ptr<Fonts> _fonts;
 	
 		string _testString;
 	
