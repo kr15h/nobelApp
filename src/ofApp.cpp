@@ -14,11 +14,10 @@ void ofApp::setup(){
 	
 	// Create shareable settings object and load laureate data
 	settings = make_shared<bmbf::nobel::Settings>();
-	vector<bmbf::nobel::Laureate *> laureates =
-		settings->load(string(XML_SETTINGS_FILENAME), fonts);
+	bmbf::nobel::Data data = settings->load(string(XML_SETTINGS_FILENAME), fonts);
 	
 	// Create laureate display for displaying laureates one by one
-	laureateDisplay = make_shared<bmbf::nobel::LaureateDisplay>(laureates, fonts);
+	laureateDisplay = make_shared<bmbf::nobel::LaureateDisplay>(data, fonts);
 }
 
 void ofApp::update(){

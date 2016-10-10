@@ -3,7 +3,7 @@
 namespace bmbf{
 namespace nobel{
 
-vector<Laureate *> & Settings::load(string filename, shared_ptr<Fonts> fonts){
+Data & Settings::load(string filename, shared_ptr<Fonts> fonts){
 	_fonts = fonts;
 	
 	bool loaded = _xml.load(filename);
@@ -12,7 +12,14 @@ vector<Laureate *> & Settings::load(string filename, shared_ptr<Fonts> fonts){
 		ofExit();
 	}
 	
-	// Parse
+	if(_xml.tagExists("settings")){
+		_xml.pushTag("settings");
+		_data.title = _xml.getValue("title", "Nobel Laureates");
+		_xml.popTag();
+	}else{
+		_data.title = "Nobel Laureates";
+	}
+	
 	if(_xml.tagExists("laureates")){
 		_xml.pushTag("laureates");
 		
@@ -26,7 +33,7 @@ vector<Laureate *> & Settings::load(string filename, shared_ptr<Fonts> fonts){
 			int year = _xml.getValue("year", 1956);
 			
 			Laureate * l = new Laureate(first, last, field, year, fonts);
-			_laureates.push_back(l);
+			_data.laureates.push_back(l);
 			
 			_xml.popTag(); // laureate
 		}
@@ -38,15 +45,15 @@ vector<Laureate *> & Settings::load(string filename, shared_ptr<Fonts> fonts){
 	}
 	
 	// Test print
-	for(unsigned int i = 0; i < _laureates.size(); ++i){
-		cout << _laureates[i]->getFirst() << ", "
-			<< _laureates[i]->getLast() << ", "
-			<< _laureates[i]->getField() << ", "
-			<< _laureates[i]->getYear()
+	for(unsigned int i = 0; i < _data.laureates.size(); ++i){
+		cout << _data.laureates[i]->getFirst() << ", "
+			<< _data.laureates[i]->getLast() << ", "
+			<< _data.laureates[i]->getField() << ", "
+			<< _data.laureates[i]->getYear()
 			<< endl;
 	}
 	
-	return _laureates;
+	return _data;
 }
 
 } // nobel

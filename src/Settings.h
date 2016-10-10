@@ -9,13 +9,18 @@
 namespace bmbf{
 namespace nobel{
 
+struct Data{
+	string title;
+	vector<Laureate *> laureates;
+};
+
 class Settings{
 	public:
-		vector<Laureate *> & load(string filename, shared_ptr<Fonts> fonts);
+		Data & load(string filename, shared_ptr<Fonts> fonts);
 	
 	private:
 		ofxXmlSettings _xml;
-		vector <Laureate *> _laureates;
+		Data _data;
 		shared_ptr<Fonts> _fonts;
 };
 
