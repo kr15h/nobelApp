@@ -26,7 +26,7 @@ void ofApp::update(){
 
 void ofApp::draw(){
 	laureateDisplay->draw();
-	ofDrawBitmapStringHighlight(ofToString(ofGetFrameRate()), 10, 20);
+	//ofDrawBitmapStringHighlight(ofToString(ofGetFrameRate()), 10, 20);
 }
 
 void ofApp::keyPressed(int key){

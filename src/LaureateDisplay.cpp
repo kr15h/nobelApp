@@ -7,11 +7,29 @@ LaureateDisplay::LaureateDisplay(Data data, shared_ptr<Fonts> fonts){
 	_data = data;
 	_fonts = fonts;
 	_titlePaths = _fonts->getSmallAsPaths(_data.title);
-	_laureateIndex = 1;
+	_laureateIndex = 0;
+	_lastTriggerTime = 0.0f;
+	
+	_state = DisplayState::SHOWING;
 }
 
 void LaureateDisplay::update(){
 	_data.laureates[_laureateIndex]->update();
+	
+	float timeNow = ofGetElapsedTimef();
+	
+	if(_state == DisplayState::SHOWING){
+		if(timeNow - _lastTriggerTime > LAUREATE_INTERVAL){
+			_state = DisplayState::STROBING;
+			_strobeTime = 1.0f + ofRandom(2.0f);
+		}
+	}else{ // if _state == DisplayState::STROBING
+		nextLaureate();
+		if(timeNow - _lastTriggerTime > LAUREATE_INTERVAL + _strobeTime){
+			_state = DisplayState::SHOWING;
+			_lastTriggerTime = timeNow;
+		}
+	}
 }
 
 void LaureateDisplay::draw(){
@@ -27,6 +45,13 @@ void LaureateDisplay::draw(){
 
 void LaureateDisplay::dissolve(){
 	_data.laureates[_laureateIndex]->dissolve();
+}
+
+void LaureateDisplay::nextLaureate(){
+	_laureateIndex++;
+	if(_laureateIndex >= _data.laureates.size()){
+		_laureateIndex = 0;
+	}
 }
 
 } // namespace nobel

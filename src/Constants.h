@@ -14,3 +14,5 @@
 #define BOLD_FONT_PATH "Libre_Baskerville/LibreBaskerville-Bold.ttf"
 
 #define ANIMATION_MULTIPLIER 0.8f
+
+#define LAUREATE_INTERVAL 5.0f
