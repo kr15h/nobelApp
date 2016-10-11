@@ -21,7 +21,7 @@ void LaureateDisplay::update(){
 	if(_state == DisplayState::SHOWING){
 		if(timeNow - _lastTriggerTime > LAUREATE_INTERVAL){
 			_state = DisplayState::STROBING;
-			_strobeTime = 1.0f + ofRandom(2.0f);
+			_strobeTime = MIN_STROBE_TIME + ofRandom(STROBE_TIME_RANDOM_RANGE);
 		}
 	}else{ // if _state == DisplayState::STROBING
 		nextLaureate();
