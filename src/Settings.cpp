@@ -3,6 +3,10 @@
 namespace bmbf{
 namespace nobel{
 
+Settings::Settings(){
+	debug = false;
+}
+
 Data & Settings::load(string filename, shared_ptr<Fonts> fonts){
 	_fonts = fonts;
 	

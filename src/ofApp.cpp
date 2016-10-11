@@ -18,6 +18,8 @@ void ofApp::setup(){
 	
 	// Create laureate display for displaying laureates one by one
 	laureateDisplay = make_shared<bmbf::nobel::LaureateDisplay>(data, fonts);
+	
+	settings->debug = false;
 }
 
 void ofApp::update(){
@@ -26,11 +28,14 @@ void ofApp::update(){
 
 void ofApp::draw(){
 	laureateDisplay->draw();
-	//ofDrawBitmapStringHighlight(ofToString(ofGetFrameRate()), 10, 20);
+	
+	if(settings->debug){
+		ofDrawBitmapStringHighlight(ofToString(ofGetFrameRate()), 10, 20);
+	}
 }
 
 void ofApp::keyPressed(int key){
 	if(key == 'd'){
-		laureateDisplay->dissolve();
+		settings->debug = !settings->debug;
 	}
 }

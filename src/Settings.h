@@ -16,8 +16,11 @@ struct Data{
 
 class Settings{
 	public:
+		Settings();
+	
 		Data & load(string filename, shared_ptr<Fonts> fonts);
 	
+		bool debug;
 	private:
 		ofxXmlSettings _xml;
 		Data _data;
