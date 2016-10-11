@@ -40,6 +40,8 @@ class Laureate{
 		int getYear();
 	
 		ofPath randomizePath(ofPath p, float offsetX, float offsetY);
+		ofPath ipolatePath(ofPath from, ofPath to, float m);
+	
 		ofPoint randomPoint(float offsetX, float offsetY);
 	
 	private:

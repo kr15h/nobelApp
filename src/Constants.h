@@ -12,3 +12,5 @@
 
 #define REGULAR_FONT_PATH "Libre_Baskerville/LibreBaskerville-Regular.ttf"
 #define BOLD_FONT_PATH "Libre_Baskerville/LibreBaskerville-Bold.ttf"
+
+#define ANIMATION_MULTIPLIER 0.8f
