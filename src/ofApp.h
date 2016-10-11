@@ -19,7 +19,11 @@ class ofApp : public ofBaseApp{
 	
 		void keyPressed(int key);
 	
+		void drawDebugGrid();
+	
 		shared_ptr<bmbf::nobel::Settings> settings;
 		shared_ptr<bmbf::nobel::Fonts> fonts;
 		shared_ptr<bmbf::nobel::LaureateDisplay> laureateDisplay;
+	
+		int debugGridStep;
 };
