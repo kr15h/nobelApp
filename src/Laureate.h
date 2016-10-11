@@ -7,6 +7,14 @@
 namespace bmbf{
 namespace nobel{
 
+struct LaureateState{
+	vector<ofPath> firstPaths;
+	vector<ofPath> lastPaths;
+	vector<ofPath> fieldAndYearPaths;
+	
+	vector<ofPolyline> firstPolylines;
+};
+
 class Laureate{
 	public:
 		Laureate(
@@ -23,11 +31,16 @@ class Laureate{
 		void drawLast();
 		void drawFieldAndYear();
 	
+		void dissolve();
+	
 		string getFirst();
 		string getLast();
 		string getField();
 	
 		int getYear();
+	
+		ofPath randomizePath(ofPath p, float offsetX, float offsetY);
+		ofPoint randomPoint(float offsetX, float offsetY);
 	
 	private:
 		shared_ptr<Fonts> _fonts;
@@ -38,13 +51,13 @@ class Laureate{
 	
 		int _year;
 	
-		vector<ofPath> _firstPaths;
-		vector<ofPath> _lastPaths;
-		vector<ofPath> _fieldAndYearPaths;
-	
 		ofRectangle _firstBoundingBox;
 		ofRectangle _lastBoundingBox;
 		ofRectangle _fieldAndYearBoundingBox;
+	
+		LaureateState _defaultState;
+		LaureateState _currentState;
+		LaureateState _targetState;
 };
 
 } // namespace nobel

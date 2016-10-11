@@ -7,16 +7,15 @@ LaureateDisplay::LaureateDisplay(Data data, shared_ptr<Fonts> fonts){
 	_data = data;
 	_fonts = fonts;
 	_titlePaths = _fonts->getSmallAsPaths(_data.title);
+	_laureateIndex = 1;
 }
 
 void LaureateDisplay::update(){
-	for(unsigned int i = 0; i < _data.laureates.size(); ++i){
-		_data.laureates[i]->update();
-	}
+	_data.laureates[_laureateIndex]->update();
 }
 
 void LaureateDisplay::draw(){
-	_data.laureates[1]->draw();
+	_data.laureates[_laureateIndex]->draw();
 	
 	ofPushMatrix();
 	ofTranslate(APP_MARGIN, APP_HEIGHT - APP_MARGIN);
@@ -24,6 +23,10 @@ void LaureateDisplay::draw(){
 		_titlePaths[i].draw();
 	}
 	ofPopMatrix();
+}
+
+void LaureateDisplay::dissolve(){
+	_data.laureates[_laureateIndex]->dissolve();
 }
 
 } // namespace nobel

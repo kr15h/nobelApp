@@ -15,10 +15,13 @@ class LaureateDisplay{
 		void update();
 		void draw();
 	
+		void dissolve();
+	
 	private:
 		Data _data;
 		shared_ptr<Fonts> _fonts;
 		vector<ofPath> _titlePaths;
+		unsigned int _laureateIndex;
 };
 
 } // namespace nobel

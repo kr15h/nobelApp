@@ -17,6 +17,8 @@ class ofApp : public ofBaseApp{
 		void update();
 		void draw();
 	
+		void keyPressed(int key);
+	
 		shared_ptr<bmbf::nobel::Settings> settings;
 		shared_ptr<bmbf::nobel::Fonts> fonts;
 		shared_ptr<bmbf::nobel::LaureateDisplay> laureateDisplay;

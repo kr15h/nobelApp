@@ -27,3 +27,9 @@ void ofApp::update(){
 void ofApp::draw(){
 	laureateDisplay->draw();
 }
+
+void ofApp::keyPressed(int key){
+	if(key == 'd'){
+		laureateDisplay->dissolve();
+	}
+}
