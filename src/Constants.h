@@ -8,7 +8,7 @@
 
 #define APP_MARGIN 40
 
-#define XML_SETTINGS_FILENAME "laureates.xml"
+#define XML_SETTINGS_FILENAME "laureates-de.xml"
 
 #define REGULAR_FONT_PATH "Libre_Baskerville/LibreBaskerville-Regular.ttf"
 #define BOLD_FONT_PATH "Libre_Baskerville/LibreBaskerville-Bold.ttf"
