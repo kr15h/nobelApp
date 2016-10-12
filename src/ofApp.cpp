@@ -3,6 +3,9 @@
 void ofApp::setup(){
 	ofBackground(0);
 	ofSetVerticalSync(true);
+	#ifdef TARGET_RASPBERRY_PI
+		ofSetFullscreen(true);
+	#endif
 	
 	// Load fonts for sharing among components
 	fonts = make_shared<bmbf::nobel::Fonts>();
