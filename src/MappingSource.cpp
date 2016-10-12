@@ -1,5 +1,9 @@
 #include "MappingSource.h"
 
+MappingSource::MappingSource(){
+	laureateDisplay = 0;
+}
+
 void MappingSource::setup(){
 	name = "Nobel Laureates";
 	allocate(APP_WIDTH, APP_HEIGHT);
@@ -33,4 +37,13 @@ void MappingSource::drawDebugGrid(){
 	}
 	
 	ofPopStyle();
+}
+
+void MappingSource::setStrobeElements(shared_ptr<bmbf::nobel::StrobeElements> sr){
+	if(laureateDisplay != 0){
+		laureateDisplay->setStrobeElements(sr);
+		laureateDisplay->setSettings(settings);
+	}else{
+		cout << "MappingSource::setStrobeElements: laureateDisplay not set" << endl;
+	}
 }

@@ -11,6 +11,7 @@
 #include "Fonts.h"
 #include "Laureate.h"
 #include "LaureateDisplay.h"
+#include "StrobeElements.h"
 
 #include "MappingSource.h"
 
@@ -25,6 +26,7 @@ class ofApp : public ofBaseApp{
 		shared_ptr<bmbf::nobel::Settings> settings;
 		shared_ptr<bmbf::nobel::Fonts> fonts;
 		shared_ptr<bmbf::nobel::LaureateDisplay> laureateDisplay;
+		shared_ptr<bmbf::nobel::StrobeElements> strobeElements;
 	
 		int debugGridStep;
 	

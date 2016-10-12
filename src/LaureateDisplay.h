@@ -4,6 +4,7 @@
 #include "Settings.h"
 #include "Laureate.h"
 #include "Fonts.h"
+#include "StrobeElements.h"
 
 namespace bmbf{
 namespace nobel{
@@ -23,6 +24,9 @@ class LaureateDisplay{
 		void dissolve();
 		void nextLaureate();
 	
+		void setStrobeElements(shared_ptr<bmbf::nobel::StrobeElements> sr);
+		void setSettings(shared_ptr<bmbf::nobel::Settings> s);
+	
 	private:
 		Data _data;
 	
@@ -36,6 +40,9 @@ class LaureateDisplay{
 		float _strobeTime;
 	
 		DisplayState _state;
+	
+		shared_ptr<bmbf::nobel::StrobeElements> _strobeElements;
+		shared_ptr<bmbf::nobel::Settings> _settings;
 };
 
 } // namespace nobel

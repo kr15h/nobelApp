@@ -25,9 +25,12 @@ void ofApp::setup(){
 	settings->debug = false;
 	debugGridStep = 100;
 	
+	strobeElements = make_shared<bmbf::nobel::StrobeElements>();
+	
 	mappingSource.settings = settings;
 	mappingSource.fonts = fonts;
 	mappingSource.laureateDisplay = laureateDisplay;
+	mappingSource.setStrobeElements(strobeElements);
 	
 	mapper.registerFboSource(mappingSource);
 	mapper.setup();

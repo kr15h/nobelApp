@@ -9,6 +9,7 @@ LaureateDisplay::LaureateDisplay(Data data, shared_ptr<Fonts> fonts){
 	_titlePaths = _fonts->getSmallAsPaths(_data.title);
 	_laureateIndex = 0;
 	_lastTriggerTime = 0.0f;
+	_strobeElements = 0;
 	
 	_state = DisplayState::SHOWING;
 }
@@ -30,6 +31,8 @@ void LaureateDisplay::update(){
 			_lastTriggerTime = timeNow;
 		}
 	}
+	
+	_strobeElements->update();
 }
 
 void LaureateDisplay::draw(){
@@ -41,6 +44,8 @@ void LaureateDisplay::draw(){
 		_titlePaths[i].draw();
 	}
 	ofPopMatrix();
+	
+	_strobeElements->draw();
 }
 
 void LaureateDisplay::dissolve(){
@@ -51,6 +56,20 @@ void LaureateDisplay::nextLaureate(){
 	_laureateIndex++;
 	if(_laureateIndex >= _data.laureates.size()){
 		_laureateIndex = 0;
+	}
+	if(_strobeElements != 0){
+		_strobeElements->triggerRandomStrobe();
+	}
+}
+
+void LaureateDisplay::setStrobeElements(shared_ptr<bmbf::nobel::StrobeElements> sr){
+	_strobeElements = sr;
+}
+
+void LaureateDisplay::setSettings(shared_ptr<bmbf::nobel::Settings> s){
+	_settings = s;
+	if(_strobeElements != 0){
+		_strobeElements->setSettings(s);
 	}
 }
 

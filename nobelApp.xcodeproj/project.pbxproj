@@ -127,6 +127,7 @@
 		01C9B7711DACF72D00E8AC65 /* ofxSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01C9B7661DACF72D00E8AC65 /* ofxSlider.cpp */; };
 		01C9B7721DACF72D00E8AC65 /* ofxSliderGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01C9B7681DACF72D00E8AC65 /* ofxSliderGroup.cpp */; };
 		01C9B7731DACF72D00E8AC65 /* ofxToggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01C9B76A1DACF72D00E8AC65 /* ofxToggle.cpp */; };
+		01C9B7761DAE360B00E8AC65 /* StrobeElements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01C9B7751DAE360B00E8AC65 /* StrobeElements.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
 		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
@@ -415,6 +416,8 @@
 		01C9B7691DACF72D00E8AC65 /* ofxSliderGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSliderGroup.h; sourceTree = "<group>"; };
 		01C9B76A1DACF72D00E8AC65 /* ofxToggle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxToggle.cpp; sourceTree = "<group>"; };
 		01C9B76B1DACF72D00E8AC65 /* ofxToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxToggle.h; sourceTree = "<group>"; };
+		01C9B7741DAE360B00E8AC65 /* StrobeElements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrobeElements.h; sourceTree = "<group>"; };
+		01C9B7751DAE360B00E8AC65 /* StrobeElements.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StrobeElements.cpp; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E4B69B5B0A3A1756003C02F2 /* nobelAppDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nobelAppDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
@@ -1026,6 +1029,8 @@
 				01A5FC441DAB9F8B0001DA82 /* LaureateDisplay.cpp */,
 				01A5FC3A1DAB84C10001DA82 /* Laureate.h */,
 				01A5FC3B1DAB84C10001DA82 /* Laureate.cpp */,
+				01C9B7741DAE360B00E8AC65 /* StrobeElements.h */,
+				01C9B7751DAE360B00E8AC65 /* StrobeElements.cpp */,
 				01A5FC361DAB81D30001DA82 /* Settings.h */,
 				01A5FC371DAB81D30001DA82 /* Settings.cpp */,
 				01A5FC401DAB8AC40001DA82 /* Fonts.h */,
@@ -1190,6 +1195,7 @@
 				01C9B68A1DACF47900E8AC65 /* MediaServer.cpp in Sources */,
 				01C9B6591DACF47900E8AC65 /* ProjectionMappingMode.cpp in Sources */,
 				01C9B6781DACF47900E8AC65 /* SetApplicationModeCmd.cpp in Sources */,
+				01C9B7761DAE360B00E8AC65 /* StrobeElements.cpp in Sources */,
 				01C9B7421DACF6E000E8AC65 /* ByteBufferWriter.cpp in Sources */,
 				01C9B6981DACF47900E8AC65 /* TriangleSurface.cpp in Sources */,
 				01C9B6831DACF47900E8AC65 /* ScaleWidget.cpp in Sources */,
