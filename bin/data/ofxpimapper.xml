@@ -2,38 +2,38 @@
     <surface type="1">
         <vertices>
             <vertex>
-                <x>8.000000000</x>
-                <y>448.000000000</y>
+                <x>3.000000000</x>
+                <y>474.000000000</y>
             </vertex>
             <vertex>
-                <x>339.000000000</x>
-                <y>452.000000000</y>
+                <x>332.000000000</x>
+                <y>479.000000000</y>
             </vertex>
             <vertex>
-                <x>334.000000000</x>
-                <y>598.000000000</y>
+                <x>328.000000000</x>
+                <y>626.000000000</y>
             </vertex>
             <vertex>
-                <x>6.000000000</x>
-                <y>574.000000000</y>
+                <x>0.000000000</x>
+                <y>601.000000000</y>
             </vertex>
         </vertices>
         <texCoords>
             <texCoord>
                 <x>-0.001764706</x>
-                <y>0.013333334</y>
+                <y>0.003333333</y>
             </texCoord>
             <texCoord>
                 <x>0.425882339</x>
-                <y>0.013333334</y>
+                <y>0.003333333</y>
             </texCoord>
             <texCoord>
                 <x>0.425882339</x>
-                <y>0.616666675</y>
+                <y>0.606666684</y>
             </texCoord>
             <texCoord>
                 <x>-0.001764706</x>
-                <y>0.616666675</y>
+                <y>0.606666684</y>
             </texCoord>
         </texCoords>
         <source>
@@ -48,37 +48,37 @@
         <vertices>
             <vertex>
                 <x>535.000000000</x>
-                <y>453.000000000</y>
+                <y>468.000000000</y>
             </vertex>
             <vertex>
-                <x>949.000000000</x>
-                <y>453.000000000</y>
+                <x>944.000000000</x>
+                <y>463.000000000</y>
             </vertex>
             <vertex>
-                <x>938.000000000</x>
-                <y>664.000000000</y>
+                <x>932.000000000</x>
+                <y>675.000000000</y>
             </vertex>
             <vertex>
                 <x>530.000000000</x>
-                <y>618.000000000</y>
+                <y>628.000000000</y>
             </vertex>
         </vertices>
         <texCoords>
             <texCoord>
                 <x>0.535294116</x>
-                <y>0.016666668</y>
+                <y>-0.093333334</y>
             </texCoord>
             <texCoord>
                 <x>0.995882332</x>
-                <y>0.016666668</y>
+                <y>-0.093333334</y>
             </texCoord>
             <texCoord>
                 <x>0.995882332</x>
-                <y>0.646666646</y>
+                <y>0.536666691</y>
             </texCoord>
             <texCoord>
                 <x>0.535294116</x>
-                <y>0.646666646</y>
+                <y>0.536666691</y>
             </texCoord>
         </texCoords>
         <source>
@@ -93,19 +93,19 @@
         <vertices>
             <vertex>
                 <x>501.000000000</x>
-                <y>611.000000000</y>
+                <y>614.000000000</y>
             </vertex>
             <vertex>
-                <x>936.000000000</x>
-                <y>659.000000000</y>
+                <x>935.000000000</x>
+                <y>662.000000000</y>
             </vertex>
             <vertex>
                 <x>929.000000000</x>
-                <y>760.000000000</y>
+                <y>762.000000000</y>
             </vertex>
             <vertex>
                 <x>498.000000000</x>
-                <y>687.000000000</y>
+                <y>691.000000000</y>
             </vertex>
         </vertices>
         <texCoords>
@@ -138,37 +138,1072 @@
         <vertices>
             <vertex>
                 <x>3.000000000</x>
-                <y>572.000000000</y>
+                <y>577.000000000</y>
             </vertex>
             <vertex>
-                <x>331.000000000</x>
-                <y>596.000000000</y>
+                <x>193.000000000</x>
+                <y>589.000000000</y>
             </vertex>
             <vertex>
-                <x>328.000000000</x>
-                <y>665.000000000</y>
+                <x>191.000000000</x>
+                <y>655.000000000</y>
             </vertex>
             <vertex>
                 <x>3.000000000</x>
-                <y>632.000000000</y>
+                <y>637.000000000</y>
             </vertex>
         </vertices>
         <texCoords>
             <texCoord>
-                <x>-0.001764670</x>
+                <x>0.004705918</x>
                 <y>0.699999988</y>
             </texCoord>
             <texCoord>
-                <x>0.340588242</x>
+                <x>0.211764708</x>
                 <y>0.699999988</y>
             </texCoord>
             <texCoord>
-                <x>0.340588242</x>
+                <x>0.211764708</x>
                 <y>0.963333309</y>
             </texCoord>
             <texCoord>
-                <x>-0.001764670</x>
+                <x>0.004705918</x>
                 <y>0.963333309</y>
+            </texCoord>
+        </texCoords>
+        <source>
+            <source-type>fbo</source-type>
+            <source-name>Nobel Laureates</source-name>
+        </source>
+        <properties>
+            <perspectiveWarping>1</perspectiveWarping>
+        </properties>
+    </surface>
+    <surface type="1">
+        <vertices>
+            <vertex>
+                <x>333.000000000</x>
+                <y>616.000000000</y>
+            </vertex>
+            <vertex>
+                <x>353.000000000</x>
+                <y>617.000000000</y>
+            </vertex>
+            <vertex>
+                <x>351.000000000</x>
+                <y>680.000000000</y>
+            </vertex>
+            <vertex>
+                <x>331.000000000</x>
+                <y>678.000000000</y>
+            </vertex>
+        </vertices>
+        <texCoords>
+            <texCoord>
+                <x>0.295882374</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.322352946</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.322352946</x>
+                <y>0.993333340</y>
+            </texCoord>
+            <texCoord>
+                <x>0.295882374</x>
+                <y>0.993333340</y>
+            </texCoord>
+        </texCoords>
+        <source>
+            <source-type>fbo</source-type>
+            <source-name>Nobel Laureates</source-name>
+        </source>
+        <properties>
+            <perspectiveWarping>1</perspectiveWarping>
+        </properties>
+    </surface>
+    <surface type="1">
+        <vertices>
+            <vertex>
+                <x>355.000000000</x>
+                <y>618.000000000</y>
+            </vertex>
+            <vertex>
+                <x>375.000000000</x>
+                <y>620.000000000</y>
+            </vertex>
+            <vertex>
+                <x>373.000000000</x>
+                <y>683.000000000</y>
+            </vertex>
+            <vertex>
+                <x>353.000000000</x>
+                <y>681.000000000</y>
+            </vertex>
+        </vertices>
+        <texCoords>
+            <texCoord>
+                <x>0.325294107</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.351764709</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.351764709</x>
+                <y>0.993333340</y>
+            </texCoord>
+            <texCoord>
+                <x>0.325294107</x>
+                <y>0.993333340</y>
+            </texCoord>
+        </texCoords>
+        <source>
+            <source-type>fbo</source-type>
+            <source-name>Nobel Laureates</source-name>
+        </source>
+        <properties>
+            <perspectiveWarping>1</perspectiveWarping>
+        </properties>
+    </surface>
+    <surface type="1">
+        <vertices>
+            <vertex>
+                <x>378.000000000</x>
+                <y>621.000000000</y>
+            </vertex>
+            <vertex>
+                <x>398.000000000</x>
+                <y>623.000000000</y>
+            </vertex>
+            <vertex>
+                <x>396.000000000</x>
+                <y>687.000000000</y>
+            </vertex>
+            <vertex>
+                <x>376.000000000</x>
+                <y>684.000000000</y>
+            </vertex>
+        </vertices>
+        <texCoords>
+            <texCoord>
+                <x>0.354705870</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.381176472</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.381176472</x>
+                <y>0.993333340</y>
+            </texCoord>
+            <texCoord>
+                <x>0.354705870</x>
+                <y>0.993333340</y>
+            </texCoord>
+        </texCoords>
+        <source>
+            <source-type>fbo</source-type>
+            <source-name>Nobel Laureates</source-name>
+        </source>
+        <properties>
+            <perspectiveWarping>1</perspectiveWarping>
+        </properties>
+    </surface>
+    <surface type="1">
+        <vertices>
+            <vertex>
+                <x>402.000000000</x>
+                <y>623.000000000</y>
+            </vertex>
+            <vertex>
+                <x>422.000000000</x>
+                <y>624.000000000</y>
+            </vertex>
+            <vertex>
+                <x>420.000000000</x>
+                <y>691.000000000</y>
+            </vertex>
+            <vertex>
+                <x>400.000000000</x>
+                <y>688.000000000</y>
+            </vertex>
+        </vertices>
+        <texCoords>
+            <texCoord>
+                <x>0.384117633</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.410588235</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.410588235</x>
+                <y>0.993333340</y>
+            </texCoord>
+            <texCoord>
+                <x>0.384117633</x>
+                <y>0.993333340</y>
+            </texCoord>
+        </texCoords>
+        <source>
+            <source-type>fbo</source-type>
+            <source-name>Nobel Laureates</source-name>
+        </source>
+        <properties>
+            <perspectiveWarping>1</perspectiveWarping>
+        </properties>
+    </surface>
+    <surface type="1">
+        <vertices>
+            <vertex>
+                <x>426.000000000</x>
+                <y>626.000000000</y>
+            </vertex>
+            <vertex>
+                <x>446.000000000</x>
+                <y>627.000000000</y>
+            </vertex>
+            <vertex>
+                <x>444.000000000</x>
+                <y>693.000000000</y>
+            </vertex>
+            <vertex>
+                <x>424.000000000</x>
+                <y>691.000000000</y>
+            </vertex>
+        </vertices>
+        <texCoords>
+            <texCoord>
+                <x>0.413529426</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.439999998</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.439999998</x>
+                <y>0.993333340</y>
+            </texCoord>
+            <texCoord>
+                <x>0.413529426</x>
+                <y>0.993333340</y>
+            </texCoord>
+        </texCoords>
+        <source>
+            <source-type>fbo</source-type>
+            <source-name>Nobel Laureates</source-name>
+        </source>
+        <properties>
+            <perspectiveWarping>1</perspectiveWarping>
+        </properties>
+    </surface>
+    <surface type="1">
+        <vertices>
+            <vertex>
+                <x>451.000000000</x>
+                <y>628.000000000</y>
+            </vertex>
+            <vertex>
+                <x>472.000000000</x>
+                <y>629.000000000</y>
+            </vertex>
+            <vertex>
+                <x>470.000000000</x>
+                <y>697.000000000</y>
+            </vertex>
+            <vertex>
+                <x>449.000000000</x>
+                <y>694.000000000</y>
+            </vertex>
+        </vertices>
+        <texCoords>
+            <texCoord>
+                <x>0.442941189</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.469411761</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.469411761</x>
+                <y>0.993333340</y>
+            </texCoord>
+            <texCoord>
+                <x>0.442941189</x>
+                <y>0.993333340</y>
+            </texCoord>
+        </texCoords>
+        <source>
+            <source-type>fbo</source-type>
+            <source-name>Nobel Laureates</source-name>
+        </source>
+        <properties>
+            <perspectiveWarping>1</perspectiveWarping>
+        </properties>
+    </surface>
+    <surface type="1">
+        <vertices>
+            <vertex>
+                <x>477.000000000</x>
+                <y>630.000000000</y>
+            </vertex>
+            <vertex>
+                <x>498.000000000</x>
+                <y>632.000000000</y>
+            </vertex>
+            <vertex>
+                <x>496.000000000</x>
+                <y>701.000000000</y>
+            </vertex>
+            <vertex>
+                <x>475.000000000</x>
+                <y>698.000000000</y>
+            </vertex>
+        </vertices>
+        <texCoords>
+            <texCoord>
+                <x>0.472352952</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.498823524</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.498823524</x>
+                <y>0.993333340</y>
+            </texCoord>
+            <texCoord>
+                <x>0.472352952</x>
+                <y>0.993333340</y>
+            </texCoord>
+        </texCoords>
+        <source>
+            <source-type>fbo</source-type>
+            <source-name>Nobel Laureates</source-name>
+        </source>
+        <properties>
+            <perspectiveWarping>1</perspectiveWarping>
+        </properties>
+    </surface>
+    <surface type="1">
+        <vertices>
+            <vertex>
+                <x>502.000000000</x>
+                <y>633.000000000</y>
+            </vertex>
+            <vertex>
+                <x>524.000000000</x>
+                <y>635.000000000</y>
+            </vertex>
+            <vertex>
+                <x>521.000000000</x>
+                <y>704.000000000</y>
+            </vertex>
+            <vertex>
+                <x>500.000000000</x>
+                <y>701.000000000</y>
+            </vertex>
+        </vertices>
+        <texCoords>
+            <texCoord>
+                <x>0.501764715</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.528235316</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.528235316</x>
+                <y>0.993333340</y>
+            </texCoord>
+            <texCoord>
+                <x>0.501764715</x>
+                <y>0.993333340</y>
+            </texCoord>
+        </texCoords>
+        <source>
+            <source-type>fbo</source-type>
+            <source-name>Nobel Laureates</source-name>
+        </source>
+        <properties>
+            <perspectiveWarping>1</perspectiveWarping>
+        </properties>
+    </surface>
+    <surface type="1">
+        <vertices>
+            <vertex>
+                <x>62.000000000</x>
+                <y>530.000000000</y>
+            </vertex>
+            <vertex>
+                <x>111.000000000</x>
+                <y>531.000000000</y>
+            </vertex>
+            <vertex>
+                <x>109.000000000</x>
+                <y>591.000000000</y>
+            </vertex>
+            <vertex>
+                <x>61.000000000</x>
+                <y>588.000000000</y>
+            </vertex>
+        </vertices>
+        <texCoords>
+            <texCoord>
+                <x>0.295882374</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.322352946</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.322352946</x>
+                <y>0.993333340</y>
+            </texCoord>
+            <texCoord>
+                <x>0.295882374</x>
+                <y>0.993333340</y>
+            </texCoord>
+        </texCoords>
+        <source>
+            <source-type>fbo</source-type>
+            <source-name>Nobel Laureates</source-name>
+        </source>
+        <properties>
+            <perspectiveWarping>1</perspectiveWarping>
+        </properties>
+    </surface>
+    <surface type="1">
+        <vertices>
+            <vertex>
+                <x>140.000000000</x>
+                <y>501.000000000</y>
+            </vertex>
+            <vertex>
+                <x>220.000000000</x>
+                <y>503.000000000</y>
+            </vertex>
+            <vertex>
+                <x>218.000000000</x>
+                <y>600.000000000</y>
+            </vertex>
+            <vertex>
+                <x>139.000000000</x>
+                <y>593.000000000</y>
+            </vertex>
+        </vertices>
+        <texCoords>
+            <texCoord>
+                <x>0.325294107</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.351764709</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.351764709</x>
+                <y>0.993333340</y>
+            </texCoord>
+            <texCoord>
+                <x>0.325294107</x>
+                <y>0.993333340</y>
+            </texCoord>
+        </texCoords>
+        <source>
+            <source-type>fbo</source-type>
+            <source-name>Nobel Laureates</source-name>
+        </source>
+        <properties>
+            <perspectiveWarping>1</perspectiveWarping>
+        </properties>
+    </surface>
+    <surface type="1">
+        <vertices>
+            <vertex>
+                <x>534.000000000</x>
+                <y>515.000000000</y>
+            </vertex>
+            <vertex>
+                <x>627.000000000</x>
+                <y>518.000000000</y>
+            </vertex>
+            <vertex>
+                <x>624.000000000</x>
+                <y>596.000000000</y>
+            </vertex>
+            <vertex>
+                <x>531.000000000</x>
+                <y>588.000000000</y>
+            </vertex>
+        </vertices>
+        <texCoords>
+            <texCoord>
+                <x>0.354705870</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.381176472</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.381176472</x>
+                <y>0.993333340</y>
+            </texCoord>
+            <texCoord>
+                <x>0.354705870</x>
+                <y>0.993333340</y>
+            </texCoord>
+        </texCoords>
+        <source>
+            <source-type>fbo</source-type>
+            <source-name>Nobel Laureates</source-name>
+        </source>
+        <properties>
+            <perspectiveWarping>1</perspectiveWarping>
+        </properties>
+    </surface>
+    <surface type="1">
+        <vertices>
+            <vertex>
+                <x>687.000000000</x>
+                <y>564.000000000</y>
+            </vertex>
+            <vertex>
+                <x>717.000000000</x>
+                <y>565.000000000</y>
+            </vertex>
+            <vertex>
+                <x>709.000000000</x>
+                <y>735.000000000</y>
+            </vertex>
+            <vertex>
+                <x>679.000000000</x>
+                <y>730.000000000</y>
+            </vertex>
+        </vertices>
+        <texCoords>
+            <texCoord>
+                <x>0.384117633</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.410588235</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.410588235</x>
+                <y>0.993333340</y>
+            </texCoord>
+            <texCoord>
+                <x>0.384117633</x>
+                <y>0.993333340</y>
+            </texCoord>
+        </texCoords>
+        <source>
+            <source-type>fbo</source-type>
+            <source-name>Nobel Laureates</source-name>
+        </source>
+        <properties>
+            <perspectiveWarping>1</perspectiveWarping>
+        </properties>
+    </surface>
+    <surface type="1">
+        <vertices>
+            <vertex>
+                <x>7.000000000</x>
+                <y>619.000000000</y>
+            </vertex>
+            <vertex>
+                <x>108.000000000</x>
+                <y>627.000000000</y>
+            </vertex>
+            <vertex>
+                <x>107.000000000</x>
+                <y>654.000000000</y>
+            </vertex>
+            <vertex>
+                <x>7.000000000</x>
+                <y>644.000000000</y>
+            </vertex>
+        </vertices>
+        <texCoords>
+            <texCoord>
+                <x>0.413529426</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.439999998</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.439999998</x>
+                <y>0.993333340</y>
+            </texCoord>
+            <texCoord>
+                <x>0.413529426</x>
+                <y>0.993333340</y>
+            </texCoord>
+        </texCoords>
+        <source>
+            <source-type>fbo</source-type>
+            <source-name>Nobel Laureates</source-name>
+        </source>
+        <properties>
+            <perspectiveWarping>1</perspectiveWarping>
+        </properties>
+    </surface>
+    <surface type="1">
+        <vertices>
+            <vertex>
+                <x>861.000000000</x>
+                <y>477.000000000</y>
+            </vertex>
+            <vertex>
+                <x>939.000000000</x>
+                <y>478.000000000</y>
+            </vertex>
+            <vertex>
+                <x>936.000000000</x>
+                <y>521.000000000</y>
+            </vertex>
+            <vertex>
+                <x>859.000000000</x>
+                <y>519.000000000</y>
+            </vertex>
+        </vertices>
+        <texCoords>
+            <texCoord>
+                <x>0.442941189</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.469411761</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.469411761</x>
+                <y>0.993333340</y>
+            </texCoord>
+            <texCoord>
+                <x>0.442941189</x>
+                <y>0.993333340</y>
+            </texCoord>
+        </texCoords>
+        <source>
+            <source-type>fbo</source-type>
+            <source-name>Nobel Laureates</source-name>
+        </source>
+        <properties>
+            <perspectiveWarping>1</perspectiveWarping>
+        </properties>
+    </surface>
+    <surface type="1">
+        <vertices>
+            <vertex>
+                <x>789.000000000</x>
+                <y>569.000000000</y>
+            </vertex>
+            <vertex>
+                <x>853.000000000</x>
+                <y>574.000000000</y>
+            </vertex>
+            <vertex>
+                <x>848.000000000</x>
+                <y>663.000000000</y>
+            </vertex>
+            <vertex>
+                <x>785.000000000</x>
+                <y>656.000000000</y>
+            </vertex>
+        </vertices>
+        <texCoords>
+            <texCoord>
+                <x>0.501764715</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.528235316</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.528235316</x>
+                <y>0.993333340</y>
+            </texCoord>
+            <texCoord>
+                <x>0.501764715</x>
+                <y>0.993333340</y>
+            </texCoord>
+        </texCoords>
+        <source>
+            <source-type>fbo</source-type>
+            <source-name>Nobel Laureates</source-name>
+        </source>
+        <properties>
+            <perspectiveWarping>1</perspectiveWarping>
+        </properties>
+    </surface>
+    <surface type="1">
+        <vertices>
+            <vertex>
+                <x>336.000000000</x>
+                <y>466.000000000</y>
+            </vertex>
+            <vertex>
+                <x>408.000000000</x>
+                <y>470.000000000</y>
+            </vertex>
+            <vertex>
+                <x>405.000000000</x>
+                <y>607.000000000</y>
+            </vertex>
+            <vertex>
+                <x>333.000000000</x>
+                <y>607.000000000</y>
+            </vertex>
+        </vertices>
+        <texCoords>
+            <texCoord>
+                <x>0.413529426</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.439999998</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.439999998</x>
+                <y>0.993333340</y>
+            </texCoord>
+            <texCoord>
+                <x>0.413529426</x>
+                <y>0.993333340</y>
+            </texCoord>
+        </texCoords>
+        <source>
+            <source-type>fbo</source-type>
+            <source-name>Nobel Laureates</source-name>
+        </source>
+        <properties>
+            <perspectiveWarping>1</perspectiveWarping>
+        </properties>
+    </surface>
+    <surface type="1">
+        <vertices>
+            <vertex>
+                <x>8.000000000</x>
+                <y>528.000000000</y>
+            </vertex>
+            <vertex>
+                <x>32.000000000</x>
+                <y>529.000000000</y>
+            </vertex>
+            <vertex>
+                <x>31.000000000</x>
+                <y>555.000000000</y>
+            </vertex>
+            <vertex>
+                <x>8.000000000</x>
+                <y>553.000000000</y>
+            </vertex>
+        </vertices>
+        <texCoords>
+            <texCoord>
+                <x>0.295882374</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.322352946</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.322352946</x>
+                <y>0.993333340</y>
+            </texCoord>
+            <texCoord>
+                <x>0.295882374</x>
+                <y>0.993333340</y>
+            </texCoord>
+        </texCoords>
+        <source>
+            <source-type>fbo</source-type>
+            <source-name>Nobel Laureates</source-name>
+        </source>
+        <properties>
+            <perspectiveWarping>1</perspectiveWarping>
+        </properties>
+    </surface>
+    <surface type="1">
+        <vertices>
+            <vertex>
+                <x>535.000000000</x>
+                <y>476.000000000</y>
+            </vertex>
+            <vertex>
+                <x>563.000000000</x>
+                <y>476.000000000</y>
+            </vertex>
+            <vertex>
+                <x>562.000000000</x>
+                <y>510.000000000</y>
+            </vertex>
+            <vertex>
+                <x>534.000000000</x>
+                <y>509.000000000</y>
+            </vertex>
+        </vertices>
+        <texCoords>
+            <texCoord>
+                <x>0.325294107</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.351764709</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.351764709</x>
+                <y>0.993333340</y>
+            </texCoord>
+            <texCoord>
+                <x>0.325294107</x>
+                <y>0.993333340</y>
+            </texCoord>
+        </texCoords>
+        <source>
+            <source-type>fbo</source-type>
+            <source-name>Nobel Laureates</source-name>
+        </source>
+        <properties>
+            <perspectiveWarping>1</perspectiveWarping>
+        </properties>
+    </surface>
+    <surface type="1">
+        <vertices>
+            <vertex>
+                <x>593.000000000</x>
+                <y>639.000000000</y>
+            </vertex>
+            <vertex>
+                <x>623.000000000</x>
+                <y>642.000000000</y>
+            </vertex>
+            <vertex>
+                <x>621.000000000</x>
+                <y>678.000000000</y>
+            </vertex>
+            <vertex>
+                <x>591.000000000</x>
+                <y>675.000000000</y>
+            </vertex>
+        </vertices>
+        <texCoords>
+            <texCoord>
+                <x>0.384117633</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.410588235</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.410588235</x>
+                <y>0.993333340</y>
+            </texCoord>
+            <texCoord>
+                <x>0.384117633</x>
+                <y>0.993333340</y>
+            </texCoord>
+        </texCoords>
+        <source>
+            <source-type>fbo</source-type>
+            <source-name>Nobel Laureates</source-name>
+        </source>
+        <properties>
+            <perspectiveWarping>1</perspectiveWarping>
+        </properties>
+    </surface>
+    <surface type="1">
+        <vertices>
+            <vertex>
+                <x>1001.000000000</x>
+                <y>530.000000000</y>
+            </vertex>
+            <vertex>
+                <x>1037.000000000</x>
+                <y>532.000000000</y>
+            </vertex>
+            <vertex>
+                <x>1028.000000000</x>
+                <y>671.000000000</y>
+            </vertex>
+            <vertex>
+                <x>993.000000000</x>
+                <y>672.000000000</y>
+            </vertex>
+        </vertices>
+        <texCoords>
+            <texCoord>
+                <x>0.384117633</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.410588235</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.410588235</x>
+                <y>0.993333340</y>
+            </texCoord>
+            <texCoord>
+                <x>0.384117633</x>
+                <y>0.993333340</y>
+            </texCoord>
+        </texCoords>
+        <source>
+            <source-type>fbo</source-type>
+            <source-name>Nobel Laureates</source-name>
+        </source>
+        <properties>
+            <perspectiveWarping>1</perspectiveWarping>
+        </properties>
+    </surface>
+    <surface type="1">
+        <vertices>
+            <vertex>
+                <x>1139.000000000</x>
+                <y>675.000000000</y>
+            </vertex>
+            <vertex>
+                <x>1200.000000000</x>
+                <y>672.000000000</y>
+            </vertex>
+            <vertex>
+                <x>1194.000000000</x>
+                <y>753.000000000</y>
+            </vertex>
+            <vertex>
+                <x>1133.000000000</x>
+                <y>759.000000000</y>
+            </vertex>
+        </vertices>
+        <texCoords>
+            <texCoord>
+                <x>0.413529426</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.439999998</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.439999998</x>
+                <y>0.993333340</y>
+            </texCoord>
+            <texCoord>
+                <x>0.413529426</x>
+                <y>0.993333340</y>
+            </texCoord>
+        </texCoords>
+        <source>
+            <source-type>fbo</source-type>
+            <source-name>Nobel Laureates</source-name>
+        </source>
+        <properties>
+            <perspectiveWarping>1</perspectiveWarping>
+        </properties>
+    </surface>
+    <surface type="1">
+        <vertices>
+            <vertex>
+                <x>1117.000000000</x>
+                <y>488.000000000</y>
+            </vertex>
+            <vertex>
+                <x>1181.000000000</x>
+                <y>493.000000000</y>
+            </vertex>
+            <vertex>
+                <x>1178.000000000</x>
+                <y>533.000000000</y>
+            </vertex>
+            <vertex>
+                <x>1114.000000000</x>
+                <y>530.000000000</y>
+            </vertex>
+        </vertices>
+        <texCoords>
+            <texCoord>
+                <x>0.325294107</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.351764709</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.351764709</x>
+                <y>0.993333340</y>
+            </texCoord>
+            <texCoord>
+                <x>0.325294107</x>
+                <y>0.993333340</y>
+            </texCoord>
+        </texCoords>
+        <source>
+            <source-type>fbo</source-type>
+            <source-name>Nobel Laureates</source-name>
+        </source>
+        <properties>
+            <perspectiveWarping>1</perspectiveWarping>
+        </properties>
+    </surface>
+    <surface type="1">
+        <vertices>
+            <vertex>
+                <x>1068.000000000</x>
+                <y>676.000000000</y>
+            </vertex>
+            <vertex>
+                <x>1100.000000000</x>
+                <y>676.000000000</y>
+            </vertex>
+            <vertex>
+                <x>1098.000000000</x>
+                <y>716.000000000</y>
+            </vertex>
+            <vertex>
+                <x>1066.000000000</x>
+                <y>718.000000000</y>
+            </vertex>
+        </vertices>
+        <texCoords>
+            <texCoord>
+                <x>0.472352952</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.498823524</x>
+                <y>0.676666677</y>
+            </texCoord>
+            <texCoord>
+                <x>0.498823524</x>
+                <y>0.993333340</y>
+            </texCoord>
+            <texCoord>
+                <x>0.472352952</x>
+                <y>0.993333340</y>
             </texCoord>
         </texCoords>
         <source>
