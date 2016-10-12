@@ -132,3 +132,7 @@ Desktop.ini
 *.mov
 *.mp4
 *.avi
+
+bin/libs
+bin/nobelApp
+bin/readMe.txt
