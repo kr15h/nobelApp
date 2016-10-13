@@ -1,31 +1,37 @@
+// We use this for the BackgroundSource
+
 #pragma once
 
 #include "ofMain.h"
-#include "FboSource.h"
-
 #include "Constants.h"
 #include "Settings.h"
-#include "Particle.h"
 
 namespace bmbf{
 namespace nobel{
 
-class BackgroundSource : public ofx::piMapper::FboSource {
+class Particle{
 	public:
-		BackgroundSource();
+		Particle();
 	
-        void setup();
+		void setup();
 		void update();
 		void draw();
 	
-		void loadImages();
-	
 		void setSettings(shared_ptr<Settings> s);
+	
+		void setImages(
+			shared_ptr<ofImage> chem,
+			shared_ptr<ofImage> econ,
+			shared_ptr<ofImage> lite,
+			shared_ptr<ofImage> medi,
+			shared_ptr<ofImage> phys);
 	
 	private:
 		shared_ptr<Settings> _settings;
 	
-		vector<Particle> _particles;
+		ofVec2f _position;
+		ofVec2f _speed;
+		float _size;
 	
 		shared_ptr<ofImage> _chemistryImage;
 		shared_ptr<ofImage> _economicsImage;

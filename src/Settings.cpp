@@ -5,6 +5,8 @@ namespace nobel{
 
 Settings::Settings(){
 	debug = false;
+	currentField = Field::PHYSICS;
+	backgroundAlpha = 255;
 }
 
 Data & Settings::load(string filename, shared_ptr<Fonts> fonts){
@@ -19,6 +21,12 @@ Data & Settings::load(string filename, shared_ptr<Fonts> fonts){
 	if(_xml.tagExists("settings")){
 		_xml.pushTag("settings");
 		_data.title = _xml.getValue("title", "Nobel Laureates");
+		
+			if(_xml.tagExists("background")){
+				_xml.pushTag("background");
+				backgroundAlpha = _xml.getValue("alpha", 255);
+				_xml.popTag();
+			}
 		_xml.popTag();
 	}else{
 		_data.title = "Nobel Laureates";
@@ -34,9 +42,10 @@ Data & Settings::load(string filename, shared_ptr<Fonts> fonts){
 			string first = _xml.getValue("first", "Johny");
 			string last = _xml.getValue("last", "Mason");
 			string field = _xml.getValue("field", "Cooking");
+			string fieldId = _xml.getAttribute("field", "id", "Pets");
 			int year = _xml.getValue("year", 1956);
 			
-			Laureate * l = new Laureate(first, last, field, year, fonts);
+			Laureate * l = new Laureate(first, last, field, fieldId, year, fonts);
 			_data.laureates.push_back(l);
 			
 			_xml.popTag(); // laureate

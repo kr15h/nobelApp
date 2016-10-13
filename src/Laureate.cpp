@@ -7,12 +7,14 @@ Laureate::Laureate(
 	string first,
 	string last,
 	string field,
+	string fieldId,
 	int year,
 	shared_ptr<Fonts> fonts){
 
 	_first = first;
 	_last = last;
 	_field = field;
+	_fieldId = fieldId;
 	_year = year;
 	_fonts = fonts;
 	
@@ -128,6 +130,10 @@ std::string Laureate::getLast(){
 
 std::string Laureate::getField(){
 	return _field;
+}
+
+string Laureate::getFieldId(){
+	return _fieldId;
 }
 
 int Laureate::getYear(){

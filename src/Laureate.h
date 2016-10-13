@@ -21,6 +21,7 @@ class Laureate{
 			string first,
 			string last,
 			string field,
+			string fieldId,
 			int year,
 			shared_ptr<Fonts> fonts);
 	
@@ -36,6 +37,7 @@ class Laureate{
 		string getFirst();
 		string getLast();
 		string getField();
+		string getFieldId();
 	
 		int getYear();
 	
@@ -50,6 +52,7 @@ class Laureate{
 		string _first;
 		string _last;
 		string _field;
+		string _fieldId;
 	
 		int _year;
 	

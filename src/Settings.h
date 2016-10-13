@@ -16,11 +16,23 @@ struct Data{
 
 class Settings{
 	public:
+		enum Field{
+			CHEMISTRY,
+			ECONOMICS,
+			LITERATURE,
+			MEDICINE,
+			PHYSICS
+		};
+	
 		Settings();
 	
 		Data & load(string filename, shared_ptr<Fonts> fonts);
 	
 		bool debug;
+	
+		Field currentField;
+	
+		int backgroundAlpha;
 	private:
 		ofxXmlSettings _xml;
 		Data _data;

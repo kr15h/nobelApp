@@ -23,6 +23,7 @@ class LaureateDisplay{
 	
 		void dissolve();
 		void nextLaureate();
+		void setLaureateField();
 	
 		void setStrobeElements(shared_ptr<bmbf::nobel::StrobeElements> sr);
 		void setSettings(shared_ptr<bmbf::nobel::Settings> s);

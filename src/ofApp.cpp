@@ -1,7 +1,7 @@
 #include "ofApp.h"
 
 void ofApp::setup(){
-	ofBackground(0);
+	ofBackground(100);
 	ofSetVerticalSync(true);
 	#ifdef TARGET_RASPBERRY_PI
 		ofSetFullscreen(true);

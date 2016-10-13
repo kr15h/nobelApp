@@ -60,6 +60,22 @@ void LaureateDisplay::nextLaureate(){
 	if(_strobeElements != 0){
 		_strobeElements->triggerRandomStrobe();
 	}
+	
+	setLaureateField();
+}
+
+void LaureateDisplay::setLaureateField(){
+	if(_data.laureates[_laureateIndex]->getFieldId() == "physics"){
+		_settings->currentField = Settings::Field::PHYSICS;
+	}else if(_data.laureates[_laureateIndex]->getFieldId() == "economics"){
+		_settings->currentField = Settings::Field::ECONOMICS;
+	}else if(_data.laureates[_laureateIndex]->getFieldId() == "medicine"){
+		_settings->currentField = Settings::Field::MEDICINE;
+	}else if(_data.laureates[_laureateIndex]->getFieldId() == "literature"){
+		_settings->currentField = Settings::Field::LITERATURE;
+	}else if(_data.laureates[_laureateIndex]->getFieldId() == "chemistry"){
+		_settings->currentField = Settings::Field::CHEMISTRY;
+	}
 }
 
 void LaureateDisplay::setStrobeElements(shared_ptr<bmbf::nobel::StrobeElements> sr){
@@ -71,6 +87,7 @@ void LaureateDisplay::setSettings(shared_ptr<bmbf::nobel::Settings> s){
 	if(_strobeElements != 0){
 		_strobeElements->setSettings(s);
 	}
+	setLaureateField();
 }
 
 } // namespace nobel

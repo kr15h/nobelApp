@@ -27,14 +27,18 @@ void MappingSource::drawDebugGrid(){
 	ofSetColor(255);
 	
 	// horizontally
+	/*
 	for(unsigned int x = 0; x < ofGetWidth(); x += 100){
 		ofDrawLine(x, 0, x, ofGetHeight());
 	}
+	*/
 	
 	// vertically
+	/*
 	for(unsigned int y = 0; y < ofGetHeight(); y += 100){
 		ofDrawLine(0, y, ofGetWidth(), y);
 	}
+	*/
 	
 	ofPopStyle();
 }

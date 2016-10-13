@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		01342CF51DAF7C7900F429B0 /* BackgroundSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01342CF41DAF7C7900F429B0 /* BackgroundSource.cpp */; };
+		01342CF81DAF81E600F429B0 /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01342CF71DAF81E600F429B0 /* Particle.cpp */; };
 		01A5FC1E1DAA5C4F0001DA82 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01A5FC171DAA5C4F0001DA82 /* tinyxml.cpp */; };
 		01A5FC1F1DAA5C4F0001DA82 /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01A5FC191DAA5C4F0001DA82 /* tinyxmlerror.cpp */; };
 		01A5FC201DAA5C4F0001DA82 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01A5FC1A1DAA5C4F0001DA82 /* tinyxmlparser.cpp */; };
@@ -166,6 +167,8 @@
 /* Begin PBXFileReference section */
 		01342CF31DAF7C7900F429B0 /* BackgroundSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundSource.h; sourceTree = "<group>"; };
 		01342CF41DAF7C7900F429B0 /* BackgroundSource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BackgroundSource.cpp; sourceTree = "<group>"; };
+		01342CF61DAF81E600F429B0 /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particle.h; sourceTree = "<group>"; };
+		01342CF71DAF81E600F429B0 /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
 		01A5FC171DAA5C4F0001DA82 /* tinyxml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxml.cpp; sourceTree = "<group>"; };
 		01A5FC181DAA5C4F0001DA82 /* tinyxml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tinyxml.h; sourceTree = "<group>"; };
 		01A5FC191DAA5C4F0001DA82 /* tinyxmlerror.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlerror.cpp; sourceTree = "<group>"; };
@@ -1029,6 +1032,8 @@
 				01C9B6A51DACF4CF00E8AC65 /* MappingSource.cpp */,
 				01342CF31DAF7C7900F429B0 /* BackgroundSource.h */,
 				01342CF41DAF7C7900F429B0 /* BackgroundSource.cpp */,
+				01342CF61DAF81E600F429B0 /* Particle.h */,
+				01342CF71DAF81E600F429B0 /* Particle.cpp */,
 				01A5FC391DAB84230001DA82 /* Constants.h */,
 				01A5FC431DAB9F8B0001DA82 /* LaureateDisplay.h */,
 				01A5FC441DAB9F8B0001DA82 /* LaureateDisplay.cpp */,
@@ -1223,6 +1228,7 @@
 				01C9B67A1DACF47900E8AC65 /* SetSourceCmd.cpp in Sources */,
 				01C9B6561DACF47900E8AC65 /* Application.cpp in Sources */,
 				01C9B69B1DACF47900E8AC65 /* RadioList.cpp in Sources */,
+				01342CF81DAF81E600F429B0 /* Particle.cpp in Sources */,
 				01C9B6631DACF47900E8AC65 /* DeselectTexCoordCmd.cpp in Sources */,
 				01C9B66D1DACF47900E8AC65 /* RmSurfaceCmd.cpp in Sources */,
 				01C9B6891DACF47900E8AC65 /* DirectoryWatcher.cpp in Sources */,
