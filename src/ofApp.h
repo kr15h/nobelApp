@@ -14,6 +14,7 @@
 #include "StrobeElements.h"
 
 #include "MappingSource.h"
+#include "BackgroundSource.h"
 
 class ofApp : public ofBaseApp{
 	public:
@@ -33,4 +34,5 @@ class ofApp : public ofBaseApp{
 		ofxPiMapper mapper;
 	
 		MappingSource mappingSource;
+		bmbf::nobel::BackgroundSource backgroundSource;
 };

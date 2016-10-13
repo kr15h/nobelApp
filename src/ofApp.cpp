@@ -32,7 +32,10 @@ void ofApp::setup(){
 	mappingSource.laureateDisplay = laureateDisplay;
 	mappingSource.setStrobeElements(strobeElements);
 	
+	backgroundSource.setSettings(settings);
+	
 	mapper.registerFboSource(mappingSource);
+	mapper.registerFboSource(backgroundSource);
 	mapper.setup();
 }
 
