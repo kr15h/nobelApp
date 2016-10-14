@@ -74,15 +74,6 @@ void BackgroundSource::draw(){
 	}
 	
 	if(_settings->debug){
-		ofPushStyle();
-		ofSetColor(0, 255, 255);
-		ofSetLineWidth(2);
-		ofNoFill();
-		ofDrawRectangle(1, 1, APP_WIDTH - 2, APP_HEIGHT - 2);
-		ofDrawLine(0, 0, APP_WIDTH, APP_HEIGHT);
-		ofDrawLine(APP_WIDTH, 0, 0, APP_HEIGHT);
-		ofPopStyle();
-		
 		_debugGridTexture.draw(0, 0);
 	}
 }
