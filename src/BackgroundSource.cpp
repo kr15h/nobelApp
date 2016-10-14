@@ -39,6 +39,24 @@ void BackgroundSource::setup(){
 		p.setup();
 		_particles.push_back(p);
 	}
+	
+	// Create debug grid texture for increased performance
+	ofFbo fbo;
+	fbo.allocate(APP_WIDTH, APP_HEIGHT);
+	fbo.begin();
+	ofClear(0, 0, 0, 0);
+	ofPushStyle();
+	ofSetLineWidth(2);
+	ofSetColor(255, 255, 0);
+	for(unsigned int x = 0; x < APP_WIDTH; x += 50){
+		ofDrawLine(x, 0, x, APP_HEIGHT);
+	}
+	for(unsigned int y = 0; y < APP_HEIGHT; y += 50){
+		ofDrawLine(0, y, APP_WIDTH, y);
+	}
+	ofPopStyle();
+	fbo.end();
+	_debugGridTexture = fbo.getTexture();
 }
 
 void BackgroundSource::update(){
@@ -64,6 +82,8 @@ void BackgroundSource::draw(){
 		ofDrawLine(0, 0, APP_WIDTH, APP_HEIGHT);
 		ofDrawLine(APP_WIDTH, 0, 0, APP_HEIGHT);
 		ofPopStyle();
+		
+		_debugGridTexture.draw(0, 0);
 	}
 }
 

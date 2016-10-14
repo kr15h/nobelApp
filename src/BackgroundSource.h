@@ -32,6 +32,8 @@ class BackgroundSource : public ofx::piMapper::FboSource {
 		shared_ptr<ofImage> _literatureImage;
 		shared_ptr<ofImage> _medicineImage;
 		shared_ptr<ofImage> _physicsImage;
+	
+		ofTexture _debugGridTexture;
 };
 
 } // namespace nobel
