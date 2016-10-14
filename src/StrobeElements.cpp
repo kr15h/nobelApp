@@ -14,7 +14,7 @@ void StrobeElements::setup(){
 
 void StrobeElements::update(){
 	for(unsigned int i = 0; i < _strobeRects.size(); ++i){
-		_strobeRects[i].alpha -= 5.0f;
+		_strobeRects[i].alpha -= _strobeRects[i].decay;
 		
 		if(_strobeRects[i].alpha <= 0.0f){
 			_strobeRects.erase(_strobeRects.begin() + i);
@@ -75,6 +75,7 @@ void StrobeElements::triggerRandomStrobe(){
 	sr.rect = r;
 	sr.color = ofColor(255);
 	sr.alpha = 255.0f;
+	sr.decay = 1.0f + ofRandom(15.0f);
 	
 	_strobeRects.push_back(sr);
 }

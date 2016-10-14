@@ -11,6 +11,7 @@ struct StrobeRect{
 	ofRectangle rect;
 	ofColor color;
 	float alpha;
+	float decay;
 };
 
 class StrobeElements{
